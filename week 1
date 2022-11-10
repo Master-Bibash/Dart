@@ -1,0 +1,24 @@
+void main() {
+  
+  Animal dog=Animal(name:"kukur",legs:4,canFly:false);
+  
+  dog.displayInfo();
+ 
+  
+  
+  
+}
+class Animal{
+  String name;
+  int legs;
+  bool canFly;
+  int? babyCount;
+  
+  Animal({required this.name,required this.legs,required this.canFly,this.babyCount});
+  
+  displayInfo(){
+    //bool canFly=true;
+    print("name is $name it has $legs and it ${canFly ? ' can fly ':'cannot fly'}");
+  }
+  
+}
